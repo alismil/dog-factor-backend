@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node": "16.10.0"
+  },
   "scripts": {
     "start": "node dist/server.js",
     "start:dev": "LOCAL=true ts-node server.ts",
     "postinstall": "tsc",
-    "heroku-postbuild": "npm run build"
+    "build": "npm run build"
   },
   "author": "your name here",
   "license": "ISC",
